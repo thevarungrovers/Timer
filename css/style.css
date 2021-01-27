@@ -1,14 +1,66 @@
 *{
     font-family: 'Yellowtail', cursive;
 }
+body{
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 .heading{
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
 }
+
+.data{
+    text-align: center;
+    font-size: 25px;
+}
+.data p{
+    /* linear gradient */
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+
 
 button{
     border: none;
     font-size: 22px;
     background-color: #74b9ff;
+    position: relative;
+    left: 40%;
+
+}
+
+button:hover{
+    background-color: #1B9CFC;
+}
+
+.timer{
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+.timer input{
+    margin: 10px;
+}
+
+
+#datatimer{
+    background: rgba( 74, 144, 226, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    padding: 50px;
+    font-size: 50px;
+    display: none;
 }

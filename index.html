@@ -14,33 +14,33 @@
   </head>
   <body>
     <div class="wrapper container">
-            <div class="heading">
-            <caption>TIMER</caption>
-            </div>
+      <div class="heading">
+        <caption>TIMER</caption>
+      </div>
             <br>
-            <label for="">End time:</label>
+      <div class="data">
+        <p>Enter the time in the 24-Hour format</p>
+      </div>
+      <div class="timer">
+        <label for="">End time:</label>
+            <br>      
+        <input type="text" name="" id="lasthr" placeholder="Hour">
+        <input type="text" name="" id="lastmin" placeholder="Minutes"> 
             <br>
-            <!-- <input type="text" name="" id="lastmonth" placeholder="Month">
-            <input type="text" name="" id="lastdate" placeholder="Date">
-            <input type="text" name="" id="lastyear" placeholder="Year"> -->
-            <input type="text" name="" id="lasthr" placeholder="Hour">
-            <input type="text" name="" id="lastmin" placeholder="Minutes">
-            <input type="text" name="" id="lastsec" placeholder="Second">
-
-            <br><br>
-            <button  onclick="myFunction()">START</button>
+            <br>    
+        <button onclick="myFunction();showtext()">START</button>
+        </div>
+          </div>
     </div>
+    <br><br>
 
+    <div id="datatimer" class="text-center">Time left: 
     <p id="demo"></p>
-
-   
-    <!-- <input type="text" name="" id="lastmin">
-    <input type="text" name="" id="lastsec"> -->
+    </div>
 
 
     <!-- js -->
-    <script src="js/time.js"></script>
-    
+    <script src="js/time.js"></script> 
 
     <!-- Optional JavaScript; choose one of the two! -->
 
